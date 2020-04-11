@@ -1,0 +1,211 @@
+/*Import de fuentes*/
+
+@font-face{
+    font-family: 'Tattoo';
+    src: url('../fonts/Tattoo.TTF');
+}
+
+body {
+    margin: 0px;
+    font-family: Roboto;
+    background-color: #dbdbdb;
+}
+
+.sesion {
+    text-decoration: none;
+}
+
+header {
+    background-color: #f0a500;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu--profile {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__menu--profile img {
+    margin-right: 10px;
+    width: 70px;
+}
+
+.header__menu--profile p {
+    margin: 0px;
+    color: white;
+}
+
+.header__img {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header__title {
+    font-family: Tattoo;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: white;
+    border: 2px solid #f0a500;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 25px 68px 30px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container h2 {
+    color: black;
+    font-size: 40px;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 15px;
+}
+
+.login__container--remember-me {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a {
+    color: grey;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.login__container--social-media > div > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register {
+    font-size: 15px;
+}
+
+.login__container--register a {
+    color: grey;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid grey;
+    font-size: 16px;
+    font-family: Roboto;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: grey;
+}
+
+.button {
+    background-color: white(255, 255, 255, 0.1);
+    border: 2px solid #f0a500;
+    border-radius: 25px;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Roboto;
+    height: 50px;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+
+.footer {
+    background: #cf7500;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 40px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        width: 320px;
+    }
+
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer a {
+        justify-content: space-between;
+        padding-left: 17px;
+        width: 100%;
+    }
+}
