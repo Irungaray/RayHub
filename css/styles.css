@@ -4,7 +4,7 @@
     font-family: 'Tattoo';
     src: url('../fonts/Tattoo.TTF');
 }
-  
+
 @font-face{
     font-family: 'Sink';
     src: url('../fonts/Sink.TTF');
@@ -133,7 +133,16 @@ header {
 .carousel__container {
     white-space: nowrap;
     margin: 70px 0px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
+}
+
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
 }
 
 .carousel-item {
@@ -148,7 +157,7 @@ header {
     transition: 450ms all;
     transform-origin: center left;
     position: relative;
-    
+
 }
 
 .carousel-item__details--title {
@@ -157,14 +166,6 @@ header {
 
 .carousel-item:hover ~ .carousel-item {
     transform: translate3d(100px, 0, 0);
-}
-  .carousel__container:hover .carousel-item {
-    opacity: 0.3;
-}
-
-.carousel__container:hover .carousel-item:hover {
-    transform: scale(1.5);
-    opacity: 1;
 }
 
 .carousel-item__img {
